@@ -3,8 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import com.github.fge.jsonschema.library.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,16 +14,27 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.WebElement as Keys
+import java.util.List
 
-WebUI.openBrowser("https://practicetestautomation.com/practice-test-login/")
+WebUI.openBrowser('amazon.in')
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Object Repository/Practice_Test_Automation/username'), 'student')
-WebUI.setText(findTestObject('Object Repository/Practice_Test_Automation/password'), 'Password123')
-WebUI.click(findTestObject('Object Repository/Practice_Test_Automation/submit'))
-boolean ele=WebUI.verifyElementPresent(findTestObject('Object Repository/Practice_Test_Automation/congrats_msg'), 10)
-print(ele)
-String s=WebUI.getText(findTestObject('Object Repository/Practice_Test_Automation/congrats_msg'))
-KeywordUtil.logInfo(s)
+WebUI.setText(findTestObject('Object Repository/Amazon/Search_text'), 'mobile')
+WebUI.click(findTestObject('Object Repository/Amazon/Search_logo'))
+WebUI.click(findTestObject('Object Repository/Amazon/Samsung_checkbox'))
+
+List<WebElement> samsung_elements=WebUI.findWebElements(findTestObject('Object Repository/Amazon/Samsung_Obj'), 10)
+
+for(i=0;i<samsung_elements.size();i++)
+	 {
+		 String mobiledescription=samsung_elements.get(i).getText()
+		 KeywordUtil.logInfo(mobiledescription)
+	 }
+	 
+
+
