@@ -18,19 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'Browser_Setup.browse'()
-WebUI.setText(findTestObject('Object Repository/iShine/Username'), 'sandeep.choudhary@apmosys.com')
-WebUI.setText(findTestObject('Object Repository/iShine/Password'), 'Dec@1841')
-WebUI.click(findTestObject('Object Repository/iShine/Login_Btn'))
-WebUI.newTab('https://mail.apmosys.com/webmail/')
-WebUI.setText(findTestObject('Object Repository/iShine/Email_username'), 'sandeep.choudhary@apmosys.com')
-WebUI.click(findTestObject('Object Repository/iShine/Email_Next_Btn'))
-WebUI.setText(findTestObject('Object Repository/iShine/Email_Pwd'), 'Aug@1841')
-WebUI.click(findTestObject('Object Repository/iShine/Email_Sign_in_Btn'))
-WebUI.switchToFrame(findTestObject('Object Repository/iShine/Frame_Email_Body'), 10)
-String Email_bodytxt=WebUI.getText(findTestObject('Object Repository/iShine/Email_Body_txt'))
-String []txt= Email_bodytxt.split(" ")
-String otp=txt[4]
-WebUI.switchToDefaultContent()
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/iShine/OTP_iShine'), otp)
-WebUI.click(findTestObject('Object Repository/iShine/iShine_Confirm_Btn'))
+
+CustomKeywords.'iShine_Login.login'(GlobalVariable.Username, GlobalVariable.Password)
+
+CustomKeywords.'Otp_functionality.otp'(GlobalVariable.Username, GlobalVariable.Email_Password)
