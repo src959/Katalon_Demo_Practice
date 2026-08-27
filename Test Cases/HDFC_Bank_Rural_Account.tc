@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HDFC_Bank_Rural_Account</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>972aadac-d07d-47ae-9b0f-7d9201066a3a</testCaseGuid>
+</TestCaseEntity>

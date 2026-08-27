@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FROM_City</name>
+   <name>City_Value_Burhanpur</name>
    <tag></tag>
-   <elementGuidId>1569365a-2ff5-411e-8d93-4189fad9a4b2</elementGuidId>
+   <elementGuidId>0a99c3ca-22cc-4200-ba07-10e3c3bcf48c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmcity']//input[@id='FromSector_show']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//span[@class='vscomp-option-text' and @data-tooltip='Burhanpur']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

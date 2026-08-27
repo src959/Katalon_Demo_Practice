@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FROM_City</name>
+   <name>Checkbox_1_Agree</name>
    <tag></tag>
-   <elementGuidId>1569365a-2ff5-411e-8d93-4189fad9a4b2</elementGuidId>
+   <elementGuidId>de9a975b-6689-4988-b613-ae07175bb4f6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmcity']//input[@id='FromSector_show']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//a[contains(text(), 'I Agree and Continue')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

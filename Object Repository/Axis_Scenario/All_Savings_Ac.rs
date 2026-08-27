@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FROM_City</name>
+   <name>All_Savings_Ac</name>
    <tag></tag>
-   <elementGuidId>1569365a-2ff5-411e-8d93-4189fad9a4b2</elementGuidId>
+   <elementGuidId>cef557b0-0e11-4d8c-b57c-2677da53e6a5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='frmcity']//input[@id='FromSector_show']</value>
+         <value>(//li[@class='select2-results__option select2-results__option--selectable'])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

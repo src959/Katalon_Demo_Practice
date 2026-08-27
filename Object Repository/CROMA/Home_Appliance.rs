@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FROM_City</name>
+   <name>Home_Appliance</name>
    <tag></tag>
-   <elementGuidId>1569365a-2ff5-411e-8d93-4189fad9a4b2</elementGuidId>
+   <elementGuidId>e8902f1f-43aa-49af-b383-c832679ce506</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='frmcity']//input[@id='FromSector_show']</value>
+         <value>//h4[text()='Home Appliances']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

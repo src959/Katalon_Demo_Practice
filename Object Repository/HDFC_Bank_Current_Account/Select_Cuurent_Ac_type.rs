@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FROM_City</name>
+   <name>Select_Cuurent_Ac_type</name>
    <tag></tag>
-   <elementGuidId>1569365a-2ff5-411e-8d93-4189fad9a4b2</elementGuidId>
+   <elementGuidId>8d12dc6f-f705-47cb-9e1c-38740c1b3289</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmcity']//input[@id='FromSector_show']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//label[@id='lblAccountType']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

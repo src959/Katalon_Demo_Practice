@@ -24,7 +24,8 @@ public class Browser_Setup {
 		//WebUI.openBrowser("https://www.royalcaribbean.com/gbr/en/cruise-ships/odyssey-of-the-seas?country=GBR&ecid=ps_296038244133&country=IND&gclsrc=aw.ds&gad_source=1&gad_campaignid=21414173483&gbraid=0AAAAACp6Eg8P8JK7EtrQaaYsNfE-pgB1T&gclid=EAIaIQobChMImJ2NhaD3lQMVbMI8Ah1EXDoHEAAYAiAAEgI_GPD_BwE")
 		//WebUI.openBrowser("https://www.ixigo.com/trains")
 		//WebUI.openBrowser("https://rahulshettyacademy.com/AutomationPractice/")
-		WebUI.openBrowser("https://ishine.apmosys.com/#/login?returnUrl=%2Fhome")
+		//WebUI.openBrowser("https://ishine.apmosys.com/#/login?returnUrl=%2Fhome")
+		WebUI.openBrowser('https://www.hdfc.bank.in/')
 		WebUI.maximizeWindow()
     }
 	

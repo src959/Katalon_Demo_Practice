@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HDFC_Bank_Current_Account</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62a2e420-c010-43c4-b12e-45b764e6c875</testCaseGuid>
+</TestCaseEntity>

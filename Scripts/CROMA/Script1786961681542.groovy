@@ -10,31 +10,19 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.WebElement as Keys
-import java.util.List
+import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.amazon.com/')
+WebUI.openBrowser('https://www.croma.com/')
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Object Repository/Amazon/Search_text'), 'mobile')
-WebUI.click(findTestObject('Object Repository/Amazon/Search_logo'))
-WebUI.click(findTestObject('Object Repository/Amazon/Samsung_checkbox'))
-
-List<WebElement> samsung_elements=WebUI.findWebElements(findTestObject('Object Repository/Amazon/Samsung_Obj'), 10)
-
-for(i=0;i<samsung_elements.size();i++)
-	 {
-		 String mobiledescription=samsung_elements.get(i).getText()
-		 KeywordUtil.logInfo(mobiledescription)
-	 }
-	 
-
-
+WebUI.click(findTestObject('Object Repository/CROMA/Close_location_popup'))
+WebUI.click(findTestObject('Object Repository/CROMA/Menu_icon'))
+WebUI.mouseOver(findTestObject('Object Repository/CROMA/Home_Appliance'))
+WebUI.delay(1)
+WebUI.mouseOver(findTestObject('Object Repository/CROMA/Air_Treatment_Devices'))
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/CROMA/Air_Purifiers'))
